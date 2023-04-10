@@ -1,0 +1,286 @@
+@font-face {
+    font-family: Lora;
+    src: url('../fonts/Lora-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url('../fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --white: #fff;
+    --main-color: #2e2e2e;
+    --footer: #1d2c2f;
+    --space-out: 2rem;
+}
+
+h1, h2, h3{
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    margin-bottom: var(--space-out);
+    text-align: center;
+}
+
+a, p{
+    font-family: 'WorkSans', Arial, Helvetica, sans-serif;
+    word-spacing: 0.5rem;
+    margin-bottom: var(--space-out);
+}
+
+
+header, nav, .our-story, .get-in-touch{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+
+
+
+/* H&H PAGE*/
+
+.landing-page{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.text-side{
+    max-width: 40%;
+    text-align: center;
+    padding-left: 8rem;
+}
+
+
+.picture-side{
+   max-height: 100vh;
+    max-width: 60%;
+}
+
+
+h1{
+    font-size: clamp(3rem, 0.2174rem + 8.6957vw, 7rem);
+}
+
+h3{
+    font-size: clamp(1.4rem, 0.9826rem + 1.3043vw, 2rem);
+    font-weight: 100;
+}
+
+
+
+/* NAV */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: var(--space-out);
+}
+
+nav a{
+    padding: 0 5rem;
+    font-size: 1.5rem;
+}
+
+
+a{
+    font-size: clamp(0.75rem, 0.2283rem + 1.6304vw, 1.5rem);
+}
+
+
+
+/* OUR STORY PAGE*/
+
+.our-story{
+    display: flex;
+
+}
+
+.our-story .picture-side img{
+    margin-bottom: 4rem;
+}
+
+
+
+.text-side p{
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.text-side h2{
+    margin: 5rem auto;
+}
+
+h2{
+    font-size: clamp(2.2rem, 1.9217rem + 0.8696vw, 2.6rem);
+}
+
+p{
+    font-size: clamp(1.2rem, 0.9913rem + 0.6522vw, 1.5rem);
+}
+
+
+
+/* FEATURED PAGE */
+
+.featured{
+    text-align: center; 
+}
+
+.featured-images{
+    display: flex;
+    justify-content: space-around;
+    gap: var(--space-out);
+    margin: 0 2rem;
+}
+
+.featured div:nth-of-type(1) h2{
+    margin: 7rem auto 1rem auto;
+}
+
+.featured div:nth-of-type(1) p{
+    margin: 0 auto 4.5rem auto;
+}
+
+iframe{
+    margin-bottom: 5rem;
+    object-fit: contain;
+}
+
+
+
+
+/* GET IN TOUCH */
+
+.get-in-touch{
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.text-left{
+    padding: 4rem;
+    max-width: 50%;
+    float:left;
+
+}
+
+.text-left h2{
+    text-align: left;  
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    min-width: 30%;
+    float:right;
+    padding: var(--space-out);
+}
+
+label{
+    color:var(--white);
+    margin-top: var(--space-out);
+    font-size: clamp(1.2rem, 0.9913rem + 0.6522vw, 1.5rem);
+}
+
+
+input[type="text"]{
+    width:30rem;
+    color:grey
+}
+
+input[type="submit"]{
+    width:  8rem;
+    height: 4rem;
+    margin-top: 4rem;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: baseline;
+
+    height: 5rem;
+    max-width: 100%;
+    padding: 0 3rem;
+
+    
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--footer);
+    color: var(--white);
+}
+
+footer a{
+    padding-left: 1.5rem;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+}
+
+footer p{
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 786px) {
+
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing-page .text-side {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .landing-page h1 {
+    font-size: 36px;
+  }
+  .landing-page h3 {
+    font-size: 24px;
+  }
+  .landing-page .picture-side img {
+    width: 100%;
+    height: auto;
+  }
+
+
+}
+
+
+
+
+
+
