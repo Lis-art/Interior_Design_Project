@@ -8,6 +8,13 @@
     src: url('../fonts/WorkSans-VariableFont_wght.ttf');
 }
 
+:root{
+    --white: #fff;
+    --main-color: #2e2e2e;
+    --footer: #1d2c2f;
+    --space-out: 2rem;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -28,12 +35,6 @@ img{
     object-fit: cover;
 }
 
-:root{
-    --white: #fff;
-    --main-color: #2e2e2e;
-    --footer: #1d2c2f;
-    --space-out: 2rem;
-}
 
 h1, h2, h3{
     font-family: 'Lora', Arial, Helvetica, sans-serif;
@@ -290,17 +291,6 @@ footer p{
 
 
 
-
-
-
-.our-story{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .our-story .picture-side img{
     width: 100%;
 }
@@ -321,8 +311,6 @@ footer p{
 }
 
 .featured-images{
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     gap: var(--space-out);
     margin: 2rem 2rem;
@@ -331,12 +319,8 @@ footer p{
 
 
 
-
-
-
 .get-in-touch{
-    display: flex;
-    flex-direction: column;
+
     min-height: 80vh;
     align-items: center;
 }
